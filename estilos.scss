@@ -1,0 +1,154 @@
+$color0: rgb(252, 246, 239);
+$color1: bisque;
+$color2: cornflowerblue;
+$color3: blueviolet;
+
+$size1: 50%;
+$size2: 100%;
+$size3: 120%;
+
+$xs: 5px;
+$small: 15px;
+$med: 35px;
+$large: 70px;
+$xl: 80px;
+
+
+
+body{   
+    background-color: $color1;
+}
+
+.navbar{   
+    height: $large;
+    background-color: $color1;
+
+    img{   
+        height: $med;
+    }
+
+    link{   
+        color: $color2;
+    }
+}
+
+.navbar-toggler-icon{   
+        color: $color2;
+    }
+
+@media only screen and (min-width:0) and (max-width:567px ) {
+    .navbar-collapse {
+        background-color: $color1;
+        display: flex;
+        justify-content: right;
+    }
+}
+
+h1{   
+    color: $color2;
+    text-align: center;
+}
+
+h2{   
+    color: $color3;
+    background-color: $color0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: $small;
+    margin-top: $xs;
+}
+
+h3{   
+    color: $color3;
+    font-size: $small;
+    margin-left: $xs;
+}
+
+h4{   
+    color: $color3;
+    text-align: center;
+}
+
+*{   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fondo{   
+    background-image: url(Multimedia/fondo2.jpg);
+    width: $size2;
+    display: flexbox;
+}
+
+main section{   
+    padding: $med;
+    table{   
+        margin: $xs;
+    }
+}
+
+.call {   
+    background-color: $color1;
+    border: $xs solid;
+    border-radius: $small;
+}
+
+.descrip{   
+    background-color: $color0;
+    border: solid $color2;
+    border-radius: $small;
+    height: 280px;
+    margin: $xs;
+    p{   
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: $size3;
+    }
+}
+
+.title {   
+    background-color: $color1;
+    margin-inline: center;
+}
+
+.card:hover {   
+    transform: scale(1.09);
+    filter: drop-shadow($size3);
+    box-shadow: $xs $xs $small $color2;
+}
+
+.card {   
+    margin: $med;
+    width: 300px;
+    height: 280px;
+    background-color: $color1;
+    border-radius: $small;
+}
+
+.card-img-top{   
+    margin-top: $small;
+}
+
+.btn{   
+    background-color: $color2;
+}
+
+.sec3{   
+    background-color: $color0;
+}
+
+footer{   
+    background-color: $color1;
+    p{   
+        font-size: $small;
+    }
+    i{   
+        font-size: $small;
+    }
+}
+
+table{   
+    background-color: $color1;
+}
+
+form{   
+    background-color: $color1;
+}
